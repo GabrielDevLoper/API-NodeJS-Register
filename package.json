@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/GabrielDevLoper/API-NodeJS-Register#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "require-dir": "^1.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
