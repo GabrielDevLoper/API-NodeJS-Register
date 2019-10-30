@@ -14,7 +14,9 @@ module.exports = {
         return res.json(clients);
     }, 
     async update(req, res){
-        const clients = await Client.findByIdAndUpdate(req.params.id, req.body, {new:true});
+        const clients = await Client.findByIdAndUpdate(req.params.id, req.body,{
+            new:true//este comando serve para atualizar automaticamente os dados que foram alterados.
+        });
 
         return res.json(clients);
     },
