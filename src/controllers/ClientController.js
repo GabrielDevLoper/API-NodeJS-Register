@@ -24,7 +24,7 @@ module.exports = {
         return res.json(clients);
     },
     async delete(req, res){
-        await Client.findOneAndRemove(req.params.id);
+        await Client.findByIdAndRemove(req.params.id);
 
         return res.send();
     }
